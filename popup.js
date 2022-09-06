@@ -28,9 +28,11 @@ eyedropper.addEventListener('click', (e) => {
     .then((result) => {
       colorLabel.textContent = result.sRGBHex;
       eyedropper.style.backgroundColor = result.sRGBHex;
+      chrome.action.setBadgeBackgroundColor({ color: result.sRGBHex });
+      chrome.action.setBadgeText({ text: '1' });
     })
     .catch((e) => {
-      resultElement.textContent = e;
+      colorLabel.textContent = e;
     });
 });
 
