@@ -1,0 +1,26 @@
+{
+    "name": "extension test",
+    "description": "Build an experimental Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/dollar.png",
+            "32": "/dollar.png",
+            "48": "/dollar.png",
+            "128": "/dollar.png"
+        }
+    },
+    "icons": {
+        "16": "/dollar.png",
+        "32": "/dollar.png",
+        "48": "/dollar.png",
+        "128": "/dollar.png"
+    }
+}
