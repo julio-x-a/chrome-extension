@@ -3,24 +3,24 @@
     "description": "Build an experimental Extension!",
     "version": "1.0",
     "manifest_version": 3,
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["https://*/*"],
     "background": {
         "service_worker": "background.js"
-    },
-    "options_page": "options.html",
-    "permissions": ["storage", "activeTab", "scripting"],
+      },
     "action": {
-        "default_popup": "popup.html",
+        "default_popup": "index.html",
         "default_icon": {
-            "16": "/dollar.png",
-            "32": "/dollar.png",
-            "48": "/dollar.png",
-            "128": "/dollar.png"
+            "16": "/src/dollar.png",
+            "32": "/src/dollar.png",
+            "48": "/src/dollar.png",
+            "128": "/src/dollar.png"
         }
     },
     "icons": {
-        "16": "/dollar.png",
-        "32": "/dollar.png",
-        "48": "/dollar.png",
-        "128": "/dollar.png"
+        "16": "/src/dollar.png",
+        "32": "/src/dollar.png",
+        "48": "/src/dollar.png",
+        "128": "/src/dollar.png"
     }
 }
